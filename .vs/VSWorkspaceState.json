@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\example_payloads",
+    "\\PowerPlant",
+    "\\PowerPlant\\Controllers",
+    "\\PowerPlant\\Views"
+  ],
+  "SelectedNode": "\\PowerPlant\\Controllers\\HomeController.cs",
+  "PreviewInSolutionExplorer": false
+}
