@@ -42,6 +42,7 @@ namespace PowerPlant.Controllers
 
             // Step 3:Allocate power production for each power plant
             var powerProductions = new List<double>();
+            int lastIndexHasP = 0;
             foreach (var powerPlant in sortedPowerPlants)
             {
                 if (load != 0)
@@ -59,21 +60,20 @@ namespace PowerPlant.Controllers
                         powerProductions.Add(powerOutput);
                         load -= powerOutput;
                     }
+                    lastIndexHasP = lastIndexHasP + 1;
                 }
                 else
                     powerProductions.Add(0);// in case the load is already distrbuted 
 
             }
 
-            // Adjust the last power plant's production to match the load
-            //This is to test if there is a bug happened if there still load is not ditrbuted
-            //to be deleted
-            if (load < 0)
+
+            //check if last powerplant didn't reach its max
+            // assign him the first expensive one load which will be always tj1 turbojet using kerosine
+            if (powerProductions[lastIndexHasP - 1] < sortedPowerPlants.ElementAt(lastIndexHasP - 1).pmax)
             {
-                int lastIndex = powerProductions.Count - 1;
-                powerProductions[lastIndex] += load;
-
-
+                powerProductions[lastIndexHasP - 1] += powerProductions[0];
+                powerProductions[0] = 0;
             }
 
             // Round the power production values to the nearest multiple of 0.1 MW

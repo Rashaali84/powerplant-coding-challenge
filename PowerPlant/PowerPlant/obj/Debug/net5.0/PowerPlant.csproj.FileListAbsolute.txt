@@ -25,3 +25,4 @@ D:\Engiee\powerplant-coding-challenge\PowerPlant\PowerPlant\obj\Debug\net5.0\Pow
 D:\Engiee\powerplant-coding-challenge\PowerPlant\PowerPlant\obj\Debug\net5.0\ref\PowerPlant.dll
 D:\Engiee\powerplant-coding-challenge\PowerPlant\PowerPlant\obj\Debug\net5.0\PowerPlant.pdb
 D:\Engiee\powerplant-coding-challenge\PowerPlant\PowerPlant\obj\Debug\net5.0\PowerPlant.genruntimeconfig.cache
+D:\Engiee\powerplant-coding-challenge\PowerPlant\PowerPlant\obj\Debug\net5.0\PowerPlant.csproj.AssemblyReference.cache
