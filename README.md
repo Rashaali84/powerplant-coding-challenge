@@ -1,4 +1,4 @@
-## Power Production Plan API
+## Power Production Plan API by Rasha Ali 
 
 This API endpoint, `PostProductionPlan`, performs calculations to determine the optimal power production allocation based on fuel costs, power plant efficiency, and load requirements. The response provides the power plant names and their respective power production values.
 
