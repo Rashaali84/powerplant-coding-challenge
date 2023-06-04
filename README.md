@@ -11,8 +11,19 @@ The method calculates the cost for each power plant based on its fuel type and e
 ### Step 3: Allocate power production for each power plant
 The method iterates through each power plant in the sorted order. If the load is not zero, power production is allocated to the power plant based on its type. For "windturbine" power plants, the power production is calculated based on the maximum power (`pmax`) and the wind fuel availability (`fuels.wind`). For "gasfired" or "turbojet" power plants, the power output is determined by considering the load and ensuring it is within the minimum (`pmin`) and maximum (`pmax`) power limits. The load is updated accordingly after each power plant allocation. If the load is already distributed or becomes zero, a power production value of 0 is added to the list.
 
-### Adjust the last power plant's production to match the load
-There is a redundant code block to adjust the last power plant's production if there is a load remaining. However, it seems unnecessary and can be removed. It is commented in the code.
+### Adjust the last power plant's production to match the pmax load and cancel the the  expensive load which will be always tj1 turbojet using kerosine
+In the provided lines of code, there is a check to determine if the last power plant in the powerProductions list (denoted by lastIndexHasP - 1) has reached its maximum power production limit (pmax value). Here is an explanation of the code:
+
+    lastIndexHasP refers to the index of the last power plant in the powerProductions list.
+    sortedPowerPlants.ElementAt(lastIndexHasP - 1).pmax retrieves the pmax value of the last power plant from the sortedPowerPlants list.
+    The condition powerProductions[lastIndexHasP - 1] < sortedPowerPlants.ElementAt(lastIndexHasP - 1).pmax checks if the last power plant's current production is less than its maximum limit.
+
+If the condition is true, it means that the last power plant can still produce more power. In this case, the code block inside the if statement is executed:
+
+    powerProductions[lastIndexHasP - 1] += powerProductions[0]; adds the power production value of the first power plant (powerProductions[0]) to the last power plant's production (powerProductions[lastIndexHasP - 1]). This effectively assigns the first power plant's load to the last power plant.
+    powerProductions[0] = 0; sets the power production value of the first power plant to zero since its load has been transferred to the last power plant.
+
+This code block is likely included to redistribute the power load and ensure that the last power plant utilizes its full capacity if there is still remaining power to be allocated.
 
 ### Round the power production values to the nearest multiple of 0.1 MW
 All power production values are rounded to the nearest multiple of 0.1 MW using the `Math.Round` method.
