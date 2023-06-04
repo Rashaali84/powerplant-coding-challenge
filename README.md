@@ -148,3 +148,35 @@ The response object is returned as an HTTP 200 OK response using the `Ok` method
   ]
 }
 
+### Example Response for the above payload3.json
+
+```json
+
+{
+  "powerplants": [
+    {
+      "name": "tj1",
+      "p": 0
+    },
+    {
+      "name": "windpark1",
+      "p": 90
+    },
+    {
+      "name": "windpark2",
+      "p": 21.6
+    },
+    {
+      "name": "gasfiredsomewhatsmaller",
+      "p": 210
+    },
+    {
+      "name": "gasfiredbig1",
+      "p": 460
+    },
+    {
+      "name": "gasfiredbig2",
+      "p": 129
+    }
+  ]
+}
