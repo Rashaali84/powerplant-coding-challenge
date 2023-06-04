@@ -89,7 +89,7 @@ The response object is returned as an HTTP 200 OK response using the `Ok` method
   "powerplants": [
     {
       "name": "tj1",
-      "p": 16
+      "p": 0
     },
     {
       "name": "windpark1",
@@ -105,7 +105,7 @@ The response object is returned as an HTTP 200 OK response using the `Ok` method
     },
     {
       "name": "gasfiredbig1",
-      "p": 143
+      "p": 159
     },
     {
       "name": "gasfiredbig2",
@@ -115,4 +115,36 @@ The response object is returned as an HTTP 200 OK response using the `Ok` method
 }
 
 
+
+### Example Response for the above payload2.json
+
+```json
+{
+  "powerplants": [
+    {
+      "name": "tj1",
+      "p": 0
+    },
+    {
+      "name": "windpark1",
+      "p": 0
+    },
+    {
+      "name": "windpark2",
+      "p": 0
+    },
+    {
+      "name": "gasfiredsomewhatsmaller",
+      "p": 210
+    },
+    {
+      "name": "gasfiredbig1",
+      "p": 270
+    },
+    {
+      "name": "gasfiredbig2",
+      "p": 0
+    }
+  ]
+}
 
