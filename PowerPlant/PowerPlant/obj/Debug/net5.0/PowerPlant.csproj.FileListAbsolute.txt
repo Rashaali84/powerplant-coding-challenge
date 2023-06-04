@@ -1,4 +1,3 @@
-D:\Engiee\powerplant-coding-challenge\PowerPlant\PowerPlant\obj\Debug\net5.0\PowerPlant.csproj.AssemblyReference.cache
 D:\Engiee\powerplant-coding-challenge\PowerPlant\PowerPlant\obj\Debug\net5.0\PowerPlant.GeneratedMSBuildEditorConfig.editorconfig
 D:\Engiee\powerplant-coding-challenge\PowerPlant\PowerPlant\obj\Debug\net5.0\PowerPlant.AssemblyInfoInputs.cache
 D:\Engiee\powerplant-coding-challenge\PowerPlant\PowerPlant\obj\Debug\net5.0\PowerPlant.AssemblyInfo.cs
@@ -22,7 +21,7 @@ D:\Engiee\powerplant-coding-challenge\PowerPlant\PowerPlant\obj\Debug\net5.0\sta
 D:\Engiee\powerplant-coding-challenge\PowerPlant\PowerPlant\obj\Debug\net5.0\PowerPlant.RazorTargetAssemblyInfo.cache
 D:\Engiee\powerplant-coding-challenge\PowerPlant\PowerPlant\obj\Debug\net5.0\PowerPlant.csproj.CopyComplete
 D:\Engiee\powerplant-coding-challenge\PowerPlant\PowerPlant\obj\Debug\net5.0\PowerPlant.dll
-D:\Engiee\powerplant-coding-challenge\PowerPlant\PowerPlant\obj\Debug\net5.0\refint\PowerPlant.dll
 D:\Engiee\powerplant-coding-challenge\PowerPlant\PowerPlant\obj\Debug\net5.0\PowerPlant.pdb
 D:\Engiee\powerplant-coding-challenge\PowerPlant\PowerPlant\obj\Debug\net5.0\PowerPlant.genruntimeconfig.cache
 D:\Engiee\powerplant-coding-challenge\PowerPlant\PowerPlant\obj\Debug\net5.0\ref\PowerPlant.dll
+D:\Engiee\powerplant-coding-challenge\PowerPlant\PowerPlant\bin\Debug\net5.0\ref\PowerPlant.dll
