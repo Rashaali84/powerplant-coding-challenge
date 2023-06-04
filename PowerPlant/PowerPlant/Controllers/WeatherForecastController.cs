@@ -66,16 +66,13 @@ namespace PowerPlant.Controllers
                     powerProductions.Add(0);// in case the load is already distrbuted 
 
             }
-
-
-            //check if last powerplant didn't reach its max
-            // assign him the first expensive one load which will be always tj1 turbojet using kerosine
+            //Check if last powerplant didn't reach its max
+            //Assign him the first expensive one load which will be always tj1 turbojet using kerosine
             if (powerProductions[lastIndexHasP - 1] < sortedPowerPlants.ElementAt(lastIndexHasP - 1).pmax)
             {
                 powerProductions[lastIndexHasP - 1] += powerProductions[0];
                 powerProductions[0] = 0;
             }
-
             // Round the power production values to the nearest multiple of 0.1 MW
             powerProductions = powerProductions.Select(p => Math.Round(p, 1)).ToList();
 
