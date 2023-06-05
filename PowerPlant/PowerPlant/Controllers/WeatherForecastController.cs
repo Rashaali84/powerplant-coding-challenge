@@ -23,7 +23,7 @@ namespace PowerPlant.Controllers
         public IActionResult PostProductionPlan([FromBody] PowerPlantData payload)
         {
             // Step 1: Extract data from the payload
-            int load = payload.load;
+            double load = Convert.ToDouble(payload.load);
             Fuels fuels = payload.fuels;
             List<PowerPlantItem> powerplants = payload.powerplants;
 
@@ -55,7 +55,7 @@ namespace PowerPlant.Controllers
                     }
                     else if (powerPlant.type == "gasfired" || powerPlant.type == "turbojet")
                     {
-                        int powerOutput = Math.Min(load, powerPlant.pmax);
+                        double powerOutput = Math.Min(load, powerPlant.pmax);
                         powerOutput = Math.Max(powerOutput, powerPlant.pmin);
                         powerProductions.Add(powerOutput);
                         load -= powerOutput;
