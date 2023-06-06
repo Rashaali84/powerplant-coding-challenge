@@ -1,6 +1,6 @@
 ## Power Production Plan API by Rasha Ali 
 
-The main algorithm code resides in     powerplant-coding-challenge/PowerPlant/PowerPlant/Controllers/WeatherForecastController.cs
+The main algorithm code resides in     powerplant-coding-challenge/PowerPlant/PowerPlant/Controllers/PowerPlantControlle.cs
 
 This API endpoint, `PostProductionPlan`, performs calculations to determine the optimal power production allocation based on fuel costs, power plant efficiency, and load requirements. The response provides the power plant names and their respective power production values.
 
